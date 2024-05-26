@@ -12,7 +12,8 @@
 
 void ingresarNombreRol(char *str, NombreRol **head) {
     NombreRol *newNode, *temp;
-    for (int i = 0; str[i] != '\0'; i++) {
+    int i;
+    for (i = 0; str[i] != '\0'; i++) {
         newNode = (NombreRol *)malloc(sizeof(NombreRol));
         newNode->caracter = str[i];
         newNode->sgte = NULL;
